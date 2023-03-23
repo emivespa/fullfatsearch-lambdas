@@ -1,0 +1,66 @@
+{
+  "body": null,
+  "headers": {
+    "Accept": "*/*",
+    "Host": "localhost:3000",
+    "User-Agent": "curl/7.81.0",
+    "X-Forwarded-Port": "3000",
+    "X-Forwarded-Proto": "http"
+  },
+  "httpMethod": "GET",
+  "isBase64Encoded": false,
+  "multiValueHeaders": {
+    "Accept": [
+      "*/*"
+    ],
+    "Host": [
+      "localhost:3000"
+    ],
+    "User-Agent": [
+      "curl/7.81.0"
+    ],
+    "X-Forwarded-Port": [
+      "3000"
+    ],
+    "X-Forwarded-Proto": [
+      "http"
+    ]
+  },
+  "multiValueQueryStringParameters": null,
+  "path": "/McCarthy",
+  "pathParameters": {
+    "q": "libro"
+  },
+  "queryStringParameters": null,
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "1234567890",
+    "domainName": "localhost:3000",
+    "extendedRequestId": null,
+    "httpMethod": "GET",
+    "identity": {
+      "accountId": null,
+      "apiKey": null,
+      "caller": null,
+      "cognitoAuthenticationProvider": null,
+      "cognitoAuthenticationType": null,
+      "cognitoIdentityPoolId": null,
+      "sourceIp": "127.0.0.1",
+      "user": null,
+      "userAgent": "Custom User Agent String",
+      "userArn": null
+    },
+    "path": "/{q}",
+    "protocol": "HTTP/1.1",
+    "requestId": "80cfb4b8-33f7-4e51-a407-11bfab67d2d4",
+    "requestTime": "21/Mar/2023:21:48:20 +0000",
+    "requestTimeEpoch": 1679435300,
+    "resourceId": "123456",
+    "resourcePath": "/{q}",
+    "stage": "Prod"
+  },
+  "resource": "/{q}",
+  "stageVariables": null,
+  "version": "1.0"
+}
+
