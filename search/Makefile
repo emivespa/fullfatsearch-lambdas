@@ -7,7 +7,7 @@ endif
 default: ;
 
 .PHONY: deploy
-deploy:
+deploy: template.yaml
 	sam deploy \
 		--capabilities CAPABILITY_IAM \
 		--parameter-overrides \
@@ -21,7 +21,7 @@ deploy:
 		--
 
 .PHONY: start-api
-start-api:
+start-api: template.yaml
 	sam local start-api \
 		--debug \
 		--parameter-overrides \
@@ -33,7 +33,7 @@ start-api:
 		--
 
 .PHONY: invoke
-invoke:
+invoke: event.json template.yaml
 	sam local invoke 'Search' \
 		--debug \
 		-e event.json \
