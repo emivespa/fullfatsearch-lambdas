@@ -11,7 +11,7 @@ const {
 
 exports.handler = async (event) => {
   const { q } = event.pathParameters
-  const url = `${ENDPOINT}/${INDEX}/_search?df=text&q=${q}`
+  const url = `${ENDPOINT}/${INDEX}/_search?df=text&size=99&q=${q}`
   // const url = `${ENDPOINT}/${INDEX}/_search?q=${q}`
   const options = {
     method: 'GET',
