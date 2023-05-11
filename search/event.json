@@ -26,12 +26,28 @@
       "http"
     ]
   },
-  "multiValueQueryStringParameters": null,
-  "path": "/McCarthy",
-  "pathParameters": {
-    "q": "libro"
+  "multiValueQueryStringParameters": {
+    "df": [
+      "text"
+    ],
+    "from": [
+      "0"
+    ],
+    "q": [
+      "tuki"
+    ],
+    "size": [
+      "50"
+    ]
   },
-  "queryStringParameters": null,
+  "path": "/s",
+  "pathParameters": null,
+  "queryStringParameters": {
+    "df": "text",
+    "from": "0",
+    "q": "tuki",
+    "size": "50"
+  },
   "requestContext": {
     "accountId": "123456789012",
     "apiId": "1234567890",
@@ -50,16 +66,16 @@
       "userAgent": "Custom User Agent String",
       "userArn": null
     },
-    "path": "/{q}",
+    "path": "/s",
     "protocol": "HTTP/1.1",
-    "requestId": "80cfb4b8-33f7-4e51-a407-11bfab67d2d4",
-    "requestTime": "21/Mar/2023:21:48:20 +0000",
-    "requestTimeEpoch": 1679435300,
+    "requestId": "af434b2b-47d4-44f1-a118-172424dc8fd1",
+    "requestTime": "11/May/2023:01:16:39 +0000",
+    "requestTimeEpoch": 1683767799,
     "resourceId": "123456",
-    "resourcePath": "/{q}",
+    "resourcePath": "/s",
     "stage": "Prod"
   },
-  "resource": "/{q}",
+  "resource": "/s",
   "stageVariables": null,
   "version": "1.0"
 }

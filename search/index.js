@@ -10,9 +10,16 @@ const {
 } = process.env
 
 exports.handler = async (event) => {
-  const { q } = event.pathParameters
-  const url = `${ENDPOINT}/${INDEX}/_search?df=text&size=99&q=${q}`
-  // const url = `${ENDPOINT}/${INDEX}/_search?q=${q}`
+  const {
+    q,
+    df,
+    from,
+    size,
+  } = event.queryStringParameters
+  const url = `${ENDPOINT}/${INDEX}/_search?q=${q}` +
+    (df    ? `&df=${df}`      : '&df=text') +
+    (from  ? `&from=${from}`  : '') +
+    (size  ? `&size=${size}`  : '')
   const options = {
     method: 'GET',
     headers: {

@@ -28,5 +28,18 @@ Resources:
         GetAlias:
           Type: Api
           Properties:
-            Path: "/{q}"
+            Path: "/s"
             Method: get
+            RequestParameters:
+              - method.request.querystring.q:
+                  Required: True
+                  Caching: False
+              - method.request.querystring.df:
+                  Required: False
+                  Caching: False
+              - method.request.querystring.from:
+                  Required: False
+                  Caching: False
+              - method.request.querystring.size:
+                  Required: False
+                  Caching: False
